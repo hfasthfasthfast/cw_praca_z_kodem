@@ -14,6 +14,6 @@ def index():
 
 @app.route('/hello/')
 @app.route('/hello/<name>')
-def hello(name=None):
+def hello(name=Maciej):
     """ zwraca render_template """
     return render_template('hello.html', name=name)
