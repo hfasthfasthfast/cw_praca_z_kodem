@@ -12,4 +12,8 @@
 3. **Instalacja Curl**
 - ``` sudo apt install curl ```
 
+4. **Uruchomienie aplikacji**
+- ``` make ``` _tutaj wstawiamy Makefile, np. make run, w moim wypadku make run odpali Flaska_
+- otwieramy drugi terminal i wykonujemy polecenie ``` curl 127.0.0.1:5000 ```
+
 Plik **README.md** jest ważny, ponieważ zawiera on informacje odnośnie projektu, jego struktury oraz informuje, jak go użyć. Jest on bardzo przydatny dla osób, które mają pierwszą styczność z danym repozytorium.
