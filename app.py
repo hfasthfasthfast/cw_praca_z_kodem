@@ -1,19 +1,7 @@
-"""
-tekst
-"""    
-from flask import Flask, render_template
-from markupsafe import escape
+from flask import Flask
 app = Flask(__name__)
-
-
 @app.route('/')
 def index():
-    """ zwraca render_template """
-    return render_template('index.html')
-
-
-@app.route('/hello/')
-@app.route('/hello/<name>')
-def hello(name="Maciej"):
-    """ zwraca render_template """
-    return render_template('hello.html', name=name)
+    return '<h1>Hello WSB! Greetings from Flask & Docker!</h1>'
+if __name__ == "__main__":
+    app.run(debug=True)
